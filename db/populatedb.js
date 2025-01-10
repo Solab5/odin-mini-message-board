@@ -20,7 +20,7 @@ VALUES
 async function main() {
   console.log("seeding...");
   const client = new Client({
-    connectionString: "postgresql://rtv-lpt-127:rtv-lpt-127@localhost:5432/messages_db",
+    connectionString: "postgresql://postgres:jvtBLDIONteJzpGfDdLqDPaEGOkfkTcb@junction.proxy.rlwy.net:49650/railway",
   });
   await client.connect();
   await client.query(SQL);
