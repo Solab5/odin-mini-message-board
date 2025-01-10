@@ -11,7 +11,7 @@
         <% messages.forEach((message, index) => { %>
             <li>
                 <h1> <%= message.text %> </h1>
-                <p> My name is <%= message.user %> </p>
+                <p> My name is <%= message.username %> </p>
                 <p> <%= message.added %> </p>
                 <a href="/message/<%= index %>">Open</a> <!-- Link to message details -->
             </li>

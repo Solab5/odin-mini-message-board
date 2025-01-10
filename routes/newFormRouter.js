@@ -1,8 +1,8 @@
 const { Router } = require("express");
+const createNewForm = require("../controllers/newFormController");
 
 const newFormRouter = Router();
 
-newFormRouter.get('/', (req, res) => 
-    res.render("form"));
+newFormRouter.get('/', createNewForm);
 
 module.exports = newFormRouter;
